@@ -1,0 +1,52 @@
+import styles from './profile.module.css';
+import { Inter } from 'next/font/google';
+
+const inter_init = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-roboto'
+});
+
+export default function Profile() {
+  return (
+    <div className={`${styles.container} ${inter_init} ${styles.inter}`}>
+      <h1 className={styles.profile__title}>Обо мне</h1>
+      <div className={styles.profile__content}>
+        <div className={styles.profile__info}>
+          <h2 className={styles.profile__header}>Евгений</h2>
+          <h3 className={styles.profile__subheader}>Фронтенд-разработчик, 31 год</h3>
+          <p className={`${styles.profile__description} ${styles.paragraph1}`}>
+            <b>Р</b>одился и живу в Москве, имею оконченное высшее<br></br> образование МГУ. Есть
+            опыт коммерческой разработки.
+          </p>
+          <p className={`${styles.profile__description} ${styles.paragraph2}`}>
+            <b>В</b> прошлом работал руководителем проектов и координатором программ в сфере
+            общественной и культурной дипломатии, где выполнял обязанности project- и event-
+            менеджера в области организации и проведения международных мероприятий /MICE-туризма.
+            Мой функционал также затрагивал стратегическое планирование, внедрение новых форм и
+            форматов работы, научно-аналитическую деятельность и сопровождение грантов.
+          </p>
+          <p className={`${styles.profile__description} ${styles.paragraph3}`}>
+            <b>С</b>пустя время ушел в веб-разработку и теперь развиваюсь как frontend-разработчик.
+            Планирую профессионально расти в направлении fullstack разработки.
+          </p>
+          <p className={`${styles.profile__description} ${styles.paragraph4}`}>
+            <b>С</b>тараюсь творчески подходить к каждому проекту, писать максимально чистый код,
+            создавать комфортный и интуитивно понятный интерфейс. Крайне мотивирован присоединиться
+            к слаженной команде разработчиков и погрузиться в работу над интересными разноплановыми
+            проектами. Умею искать <br></br>информацию, анализировать и применять ее в практических
+            <br></br>
+            целях. Всегда стараюсь изучаю новые фреймворки и технологии.
+          </p>
+          <p className={`${styles.profile__description} ${styles.paragraph5}`}>
+            <b>В</b> свободное время увлекаюсь фотографией, фото и видео-монтажом. Люблю активный
+            отдых, спорт, музыку и путешествия.
+          </p>
+        </div>
+        <div className={styles.profile__imageBlock}>
+          <div className={styles.profile__image}></div>
+        </div>
+      </div>
+    </div>
+  );
+}

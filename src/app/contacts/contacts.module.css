@@ -1,0 +1,131 @@
+.inter {
+  font-family: var(--font-inter);
+}
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: 0 auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contacts__title {
+  display: flex;
+  align-self: center;
+  max-width: 20%;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #dadada;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  /* outline: 1px solid red; */
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.contacts__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.image1 {
+  background-image: url(/img/whatsapp.png);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image2 {
+  background-image: url(/img/telegram.png);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image3 {
+  background-image: url(/img/email.png);
+  background-size: 25px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image4 {
+  background-image: url(/img/github.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image5 {
+  background-image: url(/img/min-hh-white.png);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts__text {
+  margin-left: 10px;
+  color: #dedada;
+}
+
+.contacts__link {
+  margin-left: 10px;
+  text-align: center;
+  transition:
+    color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+}
+.contacts__link .contacts__text {
+  margin-left: 0px;
+}
+
+.contacts__link {
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+.contacts__link .contacts__text:hover {
+  color: #767a7a;
+  padding-bottom: 5px;
+}
+
+.contacts__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #67f3dd;
+  transition: width 0.3s ease-in-out;
+}
+
+.contacts__link:hover::after {
+  width: 100%;
+}
