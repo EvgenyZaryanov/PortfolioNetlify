@@ -13,7 +13,7 @@
   padding: 20px 20px;
   margin: 0 auto;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .contacts__title {
@@ -27,9 +27,9 @@
   line-height: normal;
   letter-spacing: -0.5px;
   text-align: center;
-  margin: 0px;
+  margin: 0 0 40px 0;
   padding: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #dadada;

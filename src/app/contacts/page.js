@@ -1,5 +1,8 @@
+'use client';
+
 import styles from './contacts.module.css';
 import { Inter } from 'next/font/google';
+import AccordionDemo from '../../components/Accordion';
 
 const inter_init = Inter({
   subsets: ['latin'],
@@ -10,6 +13,14 @@ const inter_init = Inter({
 export default function Contacts() {
   return (
     <div className={`${styles.container} ${inter_init} ${styles.inter}`}>
+      <h1 className={`${styles.contacts__title}`}>Как связаться</h1>
+      <AccordionDemo />
+    </div>
+  );
+}
+
+{
+  /* <div className={`${styles.container} ${inter_init} ${styles.inter}`}>
       <h1 className={`${styles.contacts__title}`}>Как связаться</h1>
       <ul className={styles.contacts__info}>
         <li className={styles.contacts__item}>
@@ -45,6 +56,6 @@ export default function Contacts() {
           </a>
         </li>
       </ul>
-    </div>
-  );
+      <AccordionDemo />
+    </div> */
 }
