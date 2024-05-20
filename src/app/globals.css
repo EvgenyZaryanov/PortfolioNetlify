@@ -104,14 +104,13 @@ a {
   line-height: 20px;
   position: relative;
   padding-bottom: 5px;
-  transition: transform 0.3s ease-in; /* Добавлено свойство transition для transform */
+  transition: transform 0.3s ease-in;
 }
 
 .header__item:hover {
   background: linear-gradient(to right, #069cf4, #67f3dd);
   background-clip: text;
   color: transparent;
-  /* transform: translateY(-5px); */
 }
 
 .header__item::after {
