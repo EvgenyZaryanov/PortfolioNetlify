@@ -1,6 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
+import Header from '../components/Header';
 
 const inter_init = Inter({
   subsets: ['latin'],
@@ -18,39 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body className={inter_init.variable}>
-        <header className="header inter">
-          <div className="header__container">
-            <nav className="header__nav">
-              <ul className="header__items">
-                <li className="header__item">
-                  <Link href="/profile">
-                    <p className="header__about">Профиль</p>
-                  </Link>
-                </li>
-                <li className="header__item">
-                  <Link href="/tech-stack">
-                    <p className="header__profile">Стек</p>
-                  </Link>
-                </li>
-              </ul>
-              <Link href="/">
-                <div className="header__logo"></div>
-              </Link>
-              <ul className="header__items">
-                <li className="header__item">
-                  <Link href="/projects">
-                    <p className="header__projects">Проекты</p>
-                  </Link>
-                </li>
-                <li className="header__item">
-                  <Link href="/contacts">
-                    <p className="header__contacts">Контакты</p>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <Header />
         {children}
         <footer className="footer inter">
           <div className="footer__container">

@@ -60,40 +60,45 @@ export default function Stack() {
             <p className={styles.text}></p>
           </div>
         </div>
-        <ul className={styles.article}>
-          <p className={`${styles.paragraph} ${styles.paragraph1}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Занимаюсь разработкой
-            интерактивных UI для веб-сервисов и приложений на React, Next, Angular. Пишу SPA & MPA
-            сайты, применяю REST API для интеграции с бэком. Использую Node.js для серверной
-            разработки.
-          </p>
-          <p className={`${styles.paragraph} ${styles.paragraph2}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Хорошо владею HTML5, CSS3,
-            JavaScript, создаю адаптивную, резиновую вёрстку, применяю анимацию при помощи CSS
-            Transition, CSS Animation, keyframes + немного параллакса, соблюдаю семантику и
-            БЭМ-структуру.
-          </p>
-          <p className={`${styles.paragraph} ${styles.paragraph3}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Выстраиваю окружение и
-            настраиваю виртуальный хост Nginx на серверах Ubuntu. Знаю необходимые консольные
-            команды (git bash, windows powershell и др.). Умею работать в команде, пониманию
-            gitflow, pull-request и review.
-          </p>
-          <p className={`${styles.paragraph} ${styles.paragraph4}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Использую Chrome DevTools, W3C
-            Markup Validation Service, BEM-validator, Pixel perfect, BrowserStack, Postman для
-            отладки и тестирования приложений.
-          </p>
-          <p className={`${styles.paragraph} ${styles.paragraph5}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Умею создавать базовые SQL
-            запросы, пользоваться styled components и библиотекой MaterialUI. Знаю как работает
-            Docker (поднимал контейнеры с проектами и развертывал простенькие таблицы).
-          </p>
-          <p className={`${styles.paragraph} ${styles.paragraph6}`}>
-            <span className={styles.checkmark}>&#10004;</span> &nbsp;Периодически изучаю новые
-            актуальные фреймворки и технологии для саморазвития.
-          </p>
-        </ul>
+        <div className={styles.textBlock}>
+          <ul className={`${styles.article} ${styles.article1}`}>
+            <p className={`${styles.paragraph} ${styles.paragraph1}`}>
+              <br className={styles.space}></br>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Занимаюсь разработкой
+              интерактивных UI для веб-сервисов и приложений на React, Next, Angular. Пишу SPA & MPA
+              сайты, применяю REST API для интеграции с бэком. Использую Node.js для серверной
+              разработки.
+            </p>
+            <p className={`${styles.paragraph} ${styles.paragraph2}`}>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Хорошо владею HTML5, CSS3,
+              JavaScript, создаю адаптивную, резиновую вёрстку, применяю анимацию при помощи CSS
+              Transition, CSS Animation, keyframes + немного параллакса, соблюдаю семантику и
+              БЭМ-структуру.
+            </p>
+            <p className={`${styles.paragraph} ${styles.paragraph4}`}>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Использую Chrome DevTools,
+              W3C Markup Validation Service, BEM-validator, Pixel perfect, BrowserStack, Postman для
+              отладки и тестирования приложений.
+            </p>
+          </ul>
+          <ul className={`${styles.article} ${styles.article2}`}>
+            <p className={`${styles.paragraph} ${styles.paragraph3}`}>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Выстраиваю окружение и
+              настраиваю виртуальный хост Nginx на серверах Ubuntu. Знаю необходимые консольные
+              команды (git bash, windows powershell и др.). Умею работать в команде, пониманию
+              gitflow, pull-request и review.
+            </p>
+            <p className={`${styles.paragraph} ${styles.paragraph5}`}>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Умею создавать базовые SQL
+              запросы, пользоваться styled components и библиотекой MaterialUI. Знаю как работает
+              Docker (поднимал контейнеры с проектами и развертывал простенькие таблицы).
+            </p>
+            <p className={`${styles.paragraph} ${styles.paragraph6}`}>
+              <span className={styles.checkmark}>&#10004;</span> &nbsp;Периодически изучаю новые
+              актуальные фреймворки и технологии для саморазвития.
+            </p>
+          </ul>
+        </div>
       </div>
     </div>
   );

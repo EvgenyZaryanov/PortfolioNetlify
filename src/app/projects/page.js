@@ -14,7 +14,7 @@ const inter_init = Inter({
 export default function Projects() {
   const [openPopupId, setOpenPopupId] = useState(null);
 
-  const [showMore, setShowMore] = useState(false); // Состояние для "Еще"
+  const [showMore, setShowMore] = useState(false);
 
   const handleClick = id => {
     setOpenPopupId(id);
@@ -25,7 +25,7 @@ export default function Projects() {
   };
 
   const handleShowMore = () => {
-    setShowMore(true); // Показывать все элементы
+    setShowMore(true);
   };
 
   return (

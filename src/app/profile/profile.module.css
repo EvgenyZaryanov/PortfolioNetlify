@@ -2,20 +2,6 @@
   font-family: var(--font-inter);
 }
 
-/* .container {
-  position: relative;
-  max-width: 1140px;
-  width: 100%;
-  height: 400px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px;
-  margin: 0 auto;
-  align-items: center;
-  overflow: hidden;
-} */
-
 .container {
   position: relative;
   max-width: 1140px;
@@ -52,20 +38,12 @@
   border-bottom-color: #dadada;
 }
 
-/* @media screen and (max-width: 430px) {
-  .about-me__title {
-    font-size: 18px;
-    letter-spacing: -0.72px;
-    padding-bottom: 28px;
-  }
-} */
-
 .profile__content {
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 80px;
-  margin: 100px 0px 0px 0px;
+  margin: 100px 0px 80px 0px;
   justify-content: space-between;
   /* overflow: hidden; */
 }
@@ -84,8 +62,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: 58px;
-  letter-spacing: -2px;
-  margin: 0px;
+  /* letter-spacing: -2px; */
+  margin: 0 0 10px 0;
   max-width: 600px;
   text-align: left;
 }
@@ -98,7 +76,6 @@
   font-weight: 600;
   line-height: 20px;
   text-align: left;
-  margin: 18px 0px 26px 0px;
 }
 
 .profile__description {
@@ -108,7 +85,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 22px;
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 .paragraph2 {
@@ -164,24 +141,33 @@
   left: -7px;
   bottom: 10px;
 }
-/* @media screen and (max-width: 1024px) {
-  .about-me__photo {
-    width: 255px;
-    height: 307px;
+
+@media screen and (max-width: 900px) {
+  .profile__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0px 80px 0px;
+  }
+  .profile__header,
+  .profile__subheader {
+    text-align: center;
   }
 }
-@media screen and (max-width: 767px) {
-  .about-me__photo {
-    grid-row: 1;
-    width: 292px;
-    height: 352px;
-    margin: 0px auto;
+@media screen and (max-width: 426px) {
+  .profile__imageBlock {
+    width: 160px;
+    height: 160px;
+    margin-top: 30px;
+  }
+
+  .profile__image {
+    width: 160px;
+    height: 235px;
+  }
+  .profile__image:hover {
+    transform: scale(1.05);
+    left: 0px;
+    bottom: -10px;
   }
 }
-@media screen and (max-width: 430px) {
-  .about-me__photo {
-    grid-row: 1;
-    max-width: 430px;
-    width: 100%;
-  }
-} */

@@ -146,7 +146,7 @@ h3 {
 }
 
 .contacts__link {
-  /* margin-left: 10px; */
+  color: #dedada;
   text-align: center;
   transition:
     color 0.3s ease-in-out,
