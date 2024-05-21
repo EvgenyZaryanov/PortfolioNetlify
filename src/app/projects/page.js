@@ -410,7 +410,7 @@ export default function Projects() {
         )}
       </ul>
       {!showMore && (
-        <button className={styles.showMoreButton} onClick={handleShowMore}>
+        <button className={`${styles.showMoreButton} ${styles.inter}`} onClick={handleShowMore}>
           Показать больше
         </button>
       )}
