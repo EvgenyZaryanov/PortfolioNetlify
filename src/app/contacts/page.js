@@ -3,7 +3,6 @@
 import styles from './contacts.module.css';
 import { Inter } from 'next/font/google';
 import AccordionDemo from '../../components/Accordion';
-import Form from '../../components/Form';
 
 const inter_init = Inter({
   subsets: ['latin'],
@@ -16,7 +15,6 @@ export default function Contacts() {
     <div className={`${styles.container} ${inter_init} ${styles.inter}`}>
       <h1 className={styles.contacts__title}>Как связаться</h1>
       <AccordionDemo />
-      <Form />
     </div>
   );
 }
