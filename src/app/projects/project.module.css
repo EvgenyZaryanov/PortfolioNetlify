@@ -301,10 +301,10 @@
   font-weight: 300;
   line-height: 20px;
   padding: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   text-align: center;
   color: #aca9a9;
-  border: 1px solid gray;
+  outline: 1px solid gray;
   border-radius: 10px;
   cursor: pointer;
   transition:
@@ -314,7 +314,7 @@
 }
 .showMoreButton:hover {
   transform: scale(0.9);
-  border: 1px solid white;
+  outline: 1px solid white;
   color: #ffff;
 }
 
@@ -328,10 +328,9 @@
   .container {
     max-width: 630px;
     padding: 20px 10px;
+    margin: 0 auto 60px;
   }
   .elements {
     grid-template-columns: repeat(1, 282px);
-    row-gap: 20px;
-    column-gap: 17px;
   }
 }
