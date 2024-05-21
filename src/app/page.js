@@ -13,8 +13,8 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.sign}>
           <div className={`${styles.sign_word} ${styles.title} ${styles.inter}`}>
-            Прив<span>ет</span>ств<span>ую</span>
-            <br></br>на&nbsp;&nbsp;гл<span>ав</span>
+            Прив<span>ет</span>ству<span>ю</span>
+            <br></br>на&nbsp;&nbsp;гла<span>в</span>
             ной
           </div>
         </div>

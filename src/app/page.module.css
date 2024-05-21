@@ -55,14 +55,14 @@
   color: #fff;
   text-transform: uppercase;
   text-shadow:
-    0 -40px 100px,
-    0 0 2px,
-    0 0 1em #bfe2ff,
-    0 0 0.5em #bfe2ff,
-    0 0 0.1em #bfe2ff;
+    0 -40px 50px rgba(191, 226, 255, 0.7),
+    0 0 2px rgba(191, 226, 255, 0.8),
+    0 0 1em rgba(191, 226, 255, 0.8),
+    0 0 0.5em rgba(191, 226, 255, 0.8),
+    0 0 0.1em rgba(191, 226, 255, 0.8);
 }
 .sign .sign_word span {
-  animation: neon-4 linear infinite 2s;
+  animation: neon-4 ease-in-out infinite 2s;
 }
 @keyframes neon-4 {
   78% {
@@ -87,11 +87,55 @@
     color: inherit;
     text-shadow: inherit;
   }
+
+  83% {
+    color: #2e3133;
+    text-shadow:
+      0 0 0.8em #bfe2ff,
+      0 0 0.4em #bfe2ff,
+      0 0 0.2em #bfe2ff;
+    transform: scale(1.05);
+  }
+  86% {
+    color: inherit;
+    text-shadow: inherit;
+    transform: scale(1);
+  }
+  90% {
+    color: #2e3133;
+    text-shadow: none;
+    transform: scale(1.1);
+  }
+  92% {
+    color: inherit;
+    text-shadow: inherit;
+    transform: scale(1);
+  }
+
   92% {
     color: #2e3133;
     text-shadow: none;
   }
   92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92.75% {
+    color: #2e3133;
+    text-shadow: none;
+  }
+
+  93% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  94% {
+    color: #2e3133;
+    text-shadow: none;
+  }
+
+  95% {
     color: inherit;
     text-shadow: inherit;
   }
