@@ -406,6 +406,27 @@ export default function Projects() {
                 <span className={`${styles.element__span} ${styles.span14}`}>Parallax </span>
               </h2>
             </li>
+            <li id="element15" className={`${styles.element} ${styles.element15}`}>
+              <button className={styles.popup} onClick={() => handleClick('element15')}></button>
+              {openPopupId === 'element15' && (
+                <Popup onClose={handleClosePopup}>
+                  <a
+                    className={styles.element__link}
+                    href="https://jobfestival.tilda.ws/"
+                    target="_blank"
+                  >
+                    Сайт
+                  </a>
+                </Popup>
+              )}
+              <picture className={`${styles.element__image} ${styles.image15}`}></picture>
+              <h2 className={styles.element__title}>
+                Лэндинговая страница<br></br> на Тильде<br></br>
+                <span className={`${styles.element__span} ${styles.span15}`}>
+                  Фестиваль профессий
+                </span>
+              </h2>
+            </li>
           </>
         )}
       </ul>

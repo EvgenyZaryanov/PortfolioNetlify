@@ -227,6 +227,11 @@
   background-size: 380px 250px;
   background-repeat: no-repeat;
 }
+.image15 {
+  background: url(/img/jobfestival.png);
+  background-size: 380px 280px;
+  background-repeat: no-repeat;
+}
 
 .element__title {
   display: flex;
@@ -290,6 +295,9 @@
 }
 .span14 {
   color: #e1cf7f;
+}
+.span15 {
+  color: #ffffff;
 }
 
 .showMoreButton {
